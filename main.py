@@ -25,7 +25,7 @@ def get_feedback(id: int):
         count_current_element = len(browser.find_elements('class name', "feedback__text"))
         print(f'{i} итерация, {count_current_element}/{count_element}')
         i += 1
-    with open('C:/Users/akhma/Desktop/Python Dataset/rates.csv', 'a') as csvfile:
+    with open('C:/Users/akhma/Desktop/Python Dataset/feedbacks.csv', 'a') as csvfile:
         text_feedback_elements = browser.find_elements('class name', "feedback__text")
         text_feedback_rate = browser.find_elements('class name', "feedback__rating")
 
