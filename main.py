@@ -4,11 +4,6 @@ import csv
 
 def get_feedback(id: int):
     browser = webdriver.Firefox()
-    # browser.get(f'https://www.wildberries.ru/catalog/{id}/detail.aspx')
-    # time.sleep(3)
-    # if len(browser.find_elements('class name', "content404__title")) > 0:
-    # 	browser.quit()
-    # 	return
     browser.get(f'https://www.wildberries.ru/catalog/{id}/feedbacks')
     time.sleep(3)
     str = ''
